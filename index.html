@@ -8,7 +8,7 @@
   <input type="text" id="number2" name="num2">
   <input type="submit" id = "enter" value= "Add" onclick="addtwo()"><br>
   
-  Testing : <input type="text" id = "finish" name="box">
+  Testing : <input type="text" name="box">
 </form>
 
 <script type="javascript">
@@ -17,6 +17,6 @@
    var first_number = parseInt(document.getElementById("number1").value);
    var second_number = parseInt(document.getElementById("number2").value);
    var result = first_number + second_number;
-   document.getElementById("finish").value = result;
+   document.getElementById("box").value = result;
   }
 </script>
