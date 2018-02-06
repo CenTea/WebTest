@@ -1,4 +1,12 @@
-<script src="webtest.js"></script>
+<script type="text/javascript">
+function addtwo()
+  {
+   var first_number = parseInt(document.getElementById(id1).value);
+   var second_number = parseInt(document.getElementById(id2).value);
+   var result = first_number + second_number;
+   document.getElementById(final).value = result;
+  }
+</script>
 
 <h1>HI</h1>
 <p>This is a text line.</p>
@@ -12,5 +20,5 @@
   Testing:<br>
   <input type="text" id="box" name="box">
   <br>
-  <input type="button" id = "enter" value= "Add" onclick="javascript:addtwo("number1","number2","box")">
+  <input type="button" id = "enter" value= "Add" onclick="javascript:addtwo()">
 </form>
