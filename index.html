@@ -6,10 +6,10 @@ function operation(type)
    
    switch(type)
    {
-     case "1":
+     case 1:
        var result = first_number + second_number;
        break;
-     case "2":
+     case 2:
        var result = first_number * second_number;
        break;
    }
@@ -29,6 +29,6 @@ function operation(type)
   Testing:<br>
   <input type="text" id="box" name="box">
   <br>
-  <input type="button" id = "adder" value= "Add" onclick="javascript:addtwo("1")">
-  <input type="button" id = "multer" value= "Multiply" onclick="javascript:addtwo("2")">
+  <input type="button" id = "adder" value= "Add" onclick="javascript:operation(1)">
+  <input type="button" id = "multer" value= "Multiply" onclick="javascript:operation(2)">
 </form>
