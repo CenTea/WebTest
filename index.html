@@ -1,9 +1,18 @@
 <script type="text/javascript">
-function addtwo()
+function operation(type)
   {
    var first_number = parseInt(document.getElementById("number1").value);
    var second_number = parseInt(document.getElementById("number2").value);
-   var result = first_number + second_number;
+   var result;
+   switch(type)
+   {
+     case 1:
+       result = first_number + second_number;
+       break;
+     case 2:
+       result = first_number * second_number;
+       break;
+   }
    document.getElementById("box").value = result;
   }
 </script>
@@ -20,5 +29,6 @@ function addtwo()
   Testing:<br>
   <input type="text" id="box" name="box">
   <br>
-  <input type="button" id = "enter" value= "Add" onclick="javascript:addtwo()">
+  <input type="button" id = "adder" value= "Add" onclick="javascript:addtwo(1)">
+  <input type="button" id = "multer" value= "Multiply" onclick="javascript:addtwo(2)">
 </form>
